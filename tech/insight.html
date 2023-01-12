@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<!-- 
+    Student Name: Chen Xinyuan 202191314
+    File Name: insight.html
+    Date: 2022/4/18
+-->
+<html lang="en">
+<head>
+	<title>Advancing Technology: Insight</title>
+	<meta charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Lato/Merriweather&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" sizes="192x192" href="images/android-chrome-192.png">
+</head>
+<body>
+
+    <header>
+        <h1>Advancing Technology</h1>
+        <h3>A Look into the Future &#128171;</h3>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="ai.html">AI</a></li>
+            <li><a href="deeplearn.html">Deep Learning</a></li>
+            <li><a href="nanotech.html">Nanotechnology</a></li>
+            <li><a href="vehicles.html">Unmanned Vehicles</a></li>
+            <li><a href="insight.html">Insight</a></li>
+        </ul>
+    </nav>
+
+    <!-- Use the main area to add the main content of the webpage -->
+    <main>
+        <p>For further information and trends about new technology with our initial human mind.</p>
+        <form action="insight_submit" method="post">
+            <div id="containerIn">
+
+                <div id="div1">
+                    <fieldset>  
+                        <legend>Who are you ?</legend>
+                        
+                        Name：<input type="text" name="name" autofocus placeholder="Your name..">
+                        <br>
+                        Gender:<input type="text" name="gender" placeholder="Your gender..">
+                        <br>
+                        Who's you ancestor:<input type="text" name="ancestor" value="Apes" autocomplete="on">
+                        <br>
+                        How were you raised:<input type="text" name="raise" >
+                        <br>
+                        Do you like yourself:
+                        <br>
+                        <label> <input type="radio" name="self" value="Yes">Yes</label>
+                        <label> <input type="radio" name="self" value="Maybe">Maybe</label>
+                        
+                    </fieldset>
+                </div>
+
+
+
+                <div id="div2">
+                    <fieldset>
+                        <legend>Where are you from ?</legend>
+                        <label for="country">Which country are you from:</label>
+                        <select id="country" name="country">
+                            <option value="china">China</option>
+                            <option value="us">US</option>
+                            <option value="russia">Russia</option>
+                            <option value="england">England</option>
+                            <option value="germany">Germany</option>
+                            <option value="french">French</option>
+                            <option value="others">...</option>                    
+                        </select>
+                        <br>
+
+                        <label for="story">The reason why you are here:</label>
+                        <textarea id="story" name="story" rows="5" cols="33">It is an old story...
+                        </textarea>
+                    </fieldset> 
+                </div>
+
+
+
+                <div id="div3">
+                    <fieldset>
+                        <legend>Where are you going ?</legend>
+                        <select>
+                            <optgroup label="Life balance">
+                                <option value="1">Family</option>
+                                <option value="2" >Work</option>
+                                <option value="3">Power</option>
+                                <option value="4">Fame</option>
+                                <option value="5">Money</option>
+                            </optgroup>
+                        </select>
+
+                        <select>
+                            <optgroup label="Achivement">
+                                <option value="1">Spiritual</option>
+                                <option value="2">Material</option>
+                            </optgroup>
+                        </select>
+
+                        <select>
+                            <optgroup label="Contribute">
+                                <option value="1">To others</option>
+                                <option value="2">To yourself</option>
+                            </optgroup>
+                        </select>
+                    </fieldset> 
+                </div>
+            </div>
+
+            <button class="..." type="reset" id="reset">Reset</button>
+            <button class="..." type="submit" id="submit">Submit</button>   
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; Copyright 2021. All Rights Reserved.</p>
+        <p><a href="mailto:contact@advatech.net">contact@advatech.net</a></p>
+    </footer>
+
+
+</body>
+</html>
