@@ -1,0 +1,80 @@
+/* 
+	Student name: Xinyuan Chen 202191314
+	Today Date: 2022/4/11
+	File Name: student.css
+*/
+
+/*1.This aims at resetting originally style rules*/
+body,header,nav,main,footer,img,h1,h2,p{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+/*2.This rule sets images' max width to 100% and display image as a block*/
+img{
+	max-width: 100%;
+	display: block;
+}
+
+/*3.The style rule is to change the color of selected elements in all the html pages*/
+body{
+	background-color: violet;
+}
+
+/*4.The style aims at removing bullet marker form all navigation unordered lists*/
+nav ul{
+	list-style: none;
+}
+
+/*5.This aims at removing underline of each hyperlink*/
+a{
+	text-decoration: none;
+}
+
+/*6.This specifies the overall font-family declaration and their fallback values*/
+html{
+	font-family: Tahoma,"Microsoft Yahei",Arial, Verdana;
+}
+
+/*7.This style aims at using id value to center and change color*/
+#clubs{
+	text-align: center;
+	color: red;
+}
+/*8.This style centerlize the image*/
+img{
+	margin: auto;
+}
+
+/*9.This style aims at using class value to center and change color*/
+.welcome{
+	text-align: center;
+	color: darkgoldenrod;
+}
+
+/*10.This style changes the footer's color and background color*/
+footer{
+	color: red;
+}
+
+/*11. This style changes the header,main and footer background color*/
+header,main,footer{
+	background-color: blueviolet;
+}
+
+/*12.This style centerlizes all texts in all pages*/
+html{
+	text-align: center;
+}
+
+/*13.This changes the color and font-size of paragraph*/
+p{
+	color: whitesmoke;
+	font-size: 30px;
+}
+
+/*14.This changes the weight of the fonts*/
+head,nav{
+	font-weight: bolder;
+}
