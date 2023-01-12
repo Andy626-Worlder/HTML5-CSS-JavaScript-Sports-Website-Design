@@ -1,0 +1,313 @@
+/*To note, I divided the css generally to three parts, the first part mainly foucus on the basic template,
+and the home.html, the second mainly foucs on cascading player.html, and the third part concentrate on 
+contact.html. Please note before read. (tips:  The division line ------------)
+    Student Name: Chen Xinyuan 202191314
+    File Name: style.css
+    Date: 2022/4/21
+*/
+
+/*Formatted every element*/
+*{
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+}
+/*Regularized the font for the web*/
+html{
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+/*To make the body margin close to browser*/
+body{
+	margin-left: 0;
+	margin-right: 0;
+	margin-top: 0;
+}
+/*To cascade the header*/
+#header{
+	font-size:30px;
+	color: orangered;
+	text-align: center;
+	background-color: black;
+	padding-bottom: 1px;
+	border: 2px solid black;
+	margin: 0;
+}
+/*To cascade the navigation*/
+#navigation{
+	font-weight: bold;
+	background-color: #DF1B1F;
+}
+/*To change the color of nav hyperlink color*/
+#navigation a{
+	color: white;
+}
+
+/*To slightly change the main element to fit the browser*/
+main{
+	margin: 0;
+	padding: 10px;
+}
+/*To horzizontally place the two main div element.*/
+#wrap1, #wrap2{
+	margin-top: 15px;
+	display: flex;
+	justify-content: space-around;
+	background-color: white;
+}
+
+/*#wrap2{
+	margin-top: 15px;
+	display: flex;
+	justify-content: space-around;
+	background-color: white;
+}*/
+
+/*To change all the images radius*/
+img{
+	border-radius: 5%;
+}
+
+/*To change the effect when placing mouse on an image, and it jumps*/
+img:hover {
+    box-shadow: 0 16px 32px 0 rgba(48, 55, 66, 0.15);
+    transform: translate(0,-5px);
+    transition-delay: 0s !important;
+}
+
+/*Simply to place some relevant content to each image*/
+article{
+	text-align: center;
+	font-weight: bold;
+	background-color: whitesmoke;
+	font-size: 30px;
+}
+/*Simply centerlize the headings and paragrahs*/
+h1, h2, h3, p{
+	text-align: center;
+}
+/*Simply change the footer element color*/
+footer{
+	background-color: black;
+	color: white;
+}
+
+
+
+
+/*---------------------------------------------
+Below are most about tables in players.html */
+
+/*To make the table element occupy the whole browser*/
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+/*To change the title of the table*/
+table caption{
+    font-size: 2em;
+    font-weight: bold;
+    margin: 1em 0;
+}
+/*To simply change the table header cell and date cell*/
+th,td{
+    border: 1px solid #999;
+    text-align: center;
+    padding: 20px 0;
+}
+/*To change the basic font-size and color of table row*/
+table thead tr{
+    background-color: #DF1B1F;
+    color: #fff;
+    font-size: 40px;
+}
+/*To make the odd line of table to show diffent color*/
+table tbody tr:nth-child(odd){
+    background-color: #eee;
+}
+/*To make the image jump when putting the mouse on it*/
+table tbody tr:hover{
+    background-color: #ccc;
+}
+/*To make the table date cell red*/
+table tbody tr td:first-child{
+    color: #f40;
+}
+/*Simply make the tabel cell date more readable */
+table tfoot tr td{
+    text-align: right;
+    padding-right: 20px;
+}
+/*Simply make the tabel date cell more readable */
+table td{
+	font-weight: bold;
+	font-size: 30px;
+}
+
+
+
+
+/*-------------------------------------
+Below are about forms in contact.html*/
+
+/*Simply make the heading more readable*/
+#contact h5{
+	font-weight: bold;
+	text-align: center;
+}
+
+/*fieldset { 
+	margin:auto; 
+    margin-left: 500px;
+    width: 100px;
+}
+*/
+/*To make the form right in the middle of the browser*/
+form{
+    margin: 0 auto;
+    margin-left: 520px;
+}
+
+/*To cascade the input element and make it look like the original form in Machester United*/
+input{
+    margin: 0 auto;
+    outline-style: none ;
+    border: 1px solid #ccc; 
+    border-radius: 8px;
+    padding: 14px;
+    font-family: "Microsoft soft";
+    font-size: 20px;
+}
+/*To cascade the select input element */
+#country{
+    font-size: 30px;
+    width: 55%;
+    border-radius: 10px;
+    display: block;
+    font-family:"Microsoft soft";
+}
+
+/* Below four styles are to cascade the radio input element and
+ make it show horizontally and when click, show light blue content*/
+.a-radio{
+    display: none;
+}
+.b-radio{
+    display: inline-block;
+    border:1px solid #ccc;
+    width:25px;
+    height: 25px;
+    border-radius:2px;
+/*    vertical-align: middle;*/
+    margin-right: 5px;
+    position: relative;
+}
+.b-radio:before{
+    content: '';
+    font-size: 0;
+    width: 10px;
+    height: 10px;
+    background: rgb(143, 188, 238);
+    position: absolute;
+    left:50%;
+    top:50%;
+    margin-left: -5px;
+    margin-top: -5px;
+    border-radius: 2px;
+    display: none;
+}
+.a-radio:checked~.b-radio:before{
+    display: block;
+}
+
+/*Simply change the button size, radius and color*/
+input[type="submit"]{
+    display: block;
+    margin-left: 270px;
+    font-size: 32px;
+    border-radius: 12px;
+    background-color: #DF1B1F;
+}
+input[type="submit"]:hover {
+    background: lightgrey;
+}
+
+
+
+
+/*Below are some small changes applied to different size screens to match the icons in /images*/
+
+@media screen and (min-width: 530px), print {
+
+    /* Tablet Viewport: Show tablet-desk class, hide mobile class */
+    .tablet-desk {
+        display: block;
+    }
+
+    .mobile {
+        display: none;
+    }
+    
+    /* Tablet Viewport: Style rule for nav area */
+    nav li {
+        padding: 2% 5%;
+        font-size: 1.5em;
+    }
+    
+    /* Tablet Viewport: Style rules for main content */
+    .center {
+        margin: 0 auto;
+    }
+    
+    #clubs ul {
+        margin-left: 4%;
+    }
+    
+}
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 950px), print {
+
+    /* Desktop Viewport: Style rules for nav area */
+    nav li {
+        font-size: 1.5em;
+    }
+    
+    nav li a {
+        padding: 0.5em 1.25em;
+    }
+    
+    nav li a:hover {
+        color: #e7eaf3;
+        background-color: #003e80;
+    }
+    
+    /* Desktop Viewport: Style rules for main content */
+    main {
+        overflow: auto;
+    }
+    
+    #prog-info, #prog-meet {
+        width: 45%;
+        float: left;
+        padding: 2%;
+    }
+    
+    /* Desktop Viewport: Style rule for footer content */
+    footer {
+        clear: left;
+    }
+    
+}
+
+/* Media Query for Large Desktop Viewports */
+
+
+/* Media Query for Print */
+@media print {
+
+    body {
+        background-color: #fff;
+        color: #000;
+    }
+    
+}

@@ -1,0 +1,125 @@
+<!-- 
+	Student Name: Chen Xinyuan 202191314
+	File Name: contact.html
+	Date: 2022/4/21
+-->
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+	<title>Football Club &lt;Manchester United &gt;</title>
+	<meta charset = "utf-8">
+	<link rel="stylesheet" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+	<link rel="icon" sizes="192x192" href="images/android-chrome-192.png">
+</head>
+
+
+
+<body>
+	<div id="header">
+		<header>
+			<img src="images/ManchesterVS.png" alt="Manchester vs XXXX" width="112" height="40" class="left">
+			<!--<h1>Manchester United  &euro;</h1> -->
+		</header>
+	</div>
+
+
+
+	<div id="navigation">
+		<nav>
+			<p>
+				<img src="images/ManchesterLogo.jpg" alt="Manchester Logo" width="65" height="50">
+				<a href="home.html">HOME</a>
+				<a href="players.html">PLAYER</a>
+				<a href="contact.html">SIGN IN</a>
+			</p>
+		</nav>
+	</div>
+
+
+	<main>
+
+		<div id="contact">
+			<h1>SIGN FOR UNITED</h1>
+			<h5>Already have an account? You can also use your MUTV account details to Sign in</h5>
+			<p>My United is your personal profile and includes access to exclusive content and competitions.</p>
+			<p>To manage your Official Membership account, please visit our Ticketing & Membership site</p>
+			<form>
+				
+				Full name:<input type="text" name="fullname" autofocus placeholder="Your name..." size="65" required>
+				
+				<br>
+				<br>
+				<br>
+				
+				Email:<input type="email" name="email" size="68" placeholder="xxx@yy.com" required>
+				
+				<br>
+				<br>
+				<br>
+				
+				Number:<input type="tel" name="tel" placeholder="+86" size="67" required>
+				
+				<br>
+				<br>
+				<br>
+				
+				<label for="country">Country:</label>
+				<select id="country">
+					<option value="none" selected disabled hidden>Country or Region</option>
+					<option>United Kingdom</option>
+					<option>Austrilia</option>
+					<option>Belgium</option>
+					<option>Brazil</option>
+					<option>China</option>
+					<option>US</option>
+					<option>France</option>
+					<option>Germany</option>
+					<option>IceLand</option>
+					<option>Finland</option>
+					<option>...</option>
+				</select>
+				
+				<br>
+				<br>
+				<br>
+				
+				<h4>Gender:</h4>
+				<br>
+				<label>
+					<input type="radio" name="gender" value="male" class="a-radio" required>
+					<span class="b-radio"></span>Male
+				</label>
+				<label>
+					<input type="radio" name="gender" value="female" class="a-radio" required>
+					<span class="b-radio"></span>Female
+				</label>
+				
+				<br>
+				<br>
+				<br>
+				
+				Birthday:<input type="date" name="date" required>
+				
+				<br>
+				<br>
+				<br>
+				
+				<button type="submit" id="submit">Sign for United</button>  
+			</form>
+		</div>
+		
+	</main>
+
+
+	<footer>
+		<p>Author: Xinyuan Chen</p>
+		<p>Registration &#174;</p>
+		<p>CopyRight &#169;</p>
+	</footer>
+
+</body>
+</html>
